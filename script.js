@@ -163,7 +163,7 @@ function revealAppreciation() {
   const lines = [
     "To the teacher who opened our minds…",
     "…and made science an adventure 🌌",
-    "You're not just a teacher, you're a guide, mentor, and a Shayar (Poet) 🎤"
+    "You're not just a teacher, you're a guide, mentor"
   ];
   ['line1','line2','line3'].forEach((id)=>{ document.getElementById(id).innerHTML='';});
   function typeLine(line, id, fontCls, delay=0) {

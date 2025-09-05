@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Teachers' Day ✨</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" defer></script>
+  <!-- Anime.js -->
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" defer></script>
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- INTRO SECTION -->
+  <section id="intro" class="fullscreen">
+    <canvas id="confetti-canvas"></canvas>
+    <div class="intro-content">
+      <h1 class="glow-text">Happy Teachers' Day ✨</h1>
+      <button id="begin-btn">Tap to Begin</button>
+    </div>
+  </section>
+  <!-- CLASSROOM SECTION -->
+  <section id="classroom" class="fullscreen hidden">
+    <div class="floating-icons"></div>
+    <audio id="bg-music" loop>
+      <!-- Royalty-free or replace with your music URL (.mp3) -->
+      <source src="https://cdn.pixabay.com/audio/2022/10/16/audio_12d3d6e8ca.mp3" type="audio/mp3">
+    </audio>
+  </section>
+  <!-- APPRECIATION SECTION -->
+  <section id="appreciation" class="fullscreen hidden">
+    <div class="appreciation-lines">
+      <div class="line headline-font" id="line1"></div>
+      <div class="line headline-font" id="line2"></div>
+      <div class="line shayari-font" id="line3"></div>
+    </div>
+    <div class="appreciation-floaters"></div>
+  </section>
+  <!-- INTERACTIVE SECTION -->
+  <section id="interactive" class="fullscreen hidden">
+    <div class="float-book interactive-elem" id="book">
+      <i class="fas fa-book-open"></i>
+    </div>
+    <div class="float-star interactive-elem" id="star">
+      <i class="fas fa-star"></i>
+    </div>
+    <div class="popup" id="popup-shayari"></div>
+    <div class="popup" id="popup-thank"></div>
+  </section>
+  <!-- OUTRO SECTION -->
+  <section id="outro" class="fullscreen hidden">
+    <canvas id="confetti-outro"></canvas>
+    <audio id="applause-sound">
+      <!-- Royalty-free or replace with your applause sound .mp3 URL -->
+      <source src="https://cdn.pixabay.com/audio/2022/07/26/audio_124b460817.mp3" type="audio/mp3">
+    </audio>
+    <div class="outro-center">
+      <h1 class="glow-text outro-text">Thank You, Sir 🙏</h1>
+      <div class="teacher-silhouette"></div>
+      <div class="end-msg">— From Your Student, <span class="your-name">[Your Name]</span></div>
+      <button id="replay-btn">Tap to Watch Again</button>
+    </div>
+  </section>
+  <!-- Main JS -->
+  <script src="script.js" defer></script>
+</body>
+</html>
